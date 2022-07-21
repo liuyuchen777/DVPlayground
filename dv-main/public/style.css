@@ -3,6 +3,10 @@ body {
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
 }
+/* native select */
+select, label {
+  font-size: 2rem;
+}
 pre {
   font-size: 7em;
 }
@@ -15,6 +19,7 @@ pre {
 .mark {
   fill: #137B80;
 }
+/* Axis Label in Line, Scatter, Bar Chart */
 .xAxisLabel {
   fill: #635F5D;
   font-size: 1.5em;
@@ -23,11 +28,13 @@ pre {
   fill: #635F5D;
   font-size: 1.5em;
 }
+/* Line Chart */
 .line {
   stroke: #137B80;
   stroke-linejoin: round;
   stroke-width: 3;
 }
+/* Geo Chart */
 .marks .land {
   fill: #137B80;
 }

@@ -7,7 +7,8 @@ import { createRoot } from 'react-dom/client';
 // import { App } from './bar-chart/App';
 // import { App } from './scatter/App';
 // import { App } from './line-chart/App';
-import { App } from './geo-chart/App';
+// import { App } from './geo-chart/App';
+import { App } from './menu/App';
 
 const container = document.getElementById('root');
 const root = createRoot(container);

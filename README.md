@@ -52,6 +52,12 @@ Note: topojson, geojson, etc.
 
 ![Geo Chart](assets/geo-chart.png)
 
+### Scatter chart with menu
+
+[MDN select](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
+
+![Native Menu](./assets/react-menu.png)
+
 ## Others
 
 ### Sine wave
