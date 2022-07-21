@@ -17,6 +17,7 @@
                 .attr("cx", function(d){ return (d + 0.5) * width / n; })
                 .attr("r", width / n / 2)
                 .attr("fill", "white");
+        
         d3.timer(function (time){
             circles.attr("cy", function(d){
                 return (Math.sin(d / 5 + time / 1000)) * height / 4 + height / 2;
