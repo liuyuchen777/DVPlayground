@@ -6,6 +6,12 @@ Use `d3.js` and `React.js` to build data visualizations.
 
 [Data Visualization with D3, JavaScript, React - Full Course](https://www.youtube.com/watch?v=2LhoCfjm8R4&t=12467s)
 
+```
+cd dv-main
+npm i
+npm start
+```
+
 ### Smile face
 
 Use svg cricle and path to draw a smile face.
@@ -22,11 +28,21 @@ Use mouse event and react `useState` hook to let circle move with mouse.
 
 Visualizae 2020 world population with bar chart.
 
+[Data Source: UN]()
+
 ![Bar Chart](./assets/bar.png)
 
 ### Petal scatter
 
 ![Scatter](./assets/scatter.png)
+
+### Time series and line chart
+
+Tempertue information via time of your city.
+
+[Data Source: Data Canvas: Sense Your City](https://grayarea.org/initiative/data-canvas-sense-your-city/)
+
+![Line Chart](./assets/line.png)
 
 ## Others
 
