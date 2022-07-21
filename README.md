@@ -44,6 +44,14 @@ Tempertue information via time of your city.
 
 ![Line Chart](./assets/line.png)
 
+### Geo chart
+
+Note: topojson, geojson, etc.
+
+[Data Source 1: World Atlas](https://github.com/topojson/world-atlas)
+
+![Geo Chart](assets/geo-chart.png)
+
 ## Others
 
 ### Sine wave
