@@ -6,7 +6,7 @@ const csvUrl =
 
 const width = 960;
 const height = 500;
-const margin = { top: 20, right: 20, bottom: 20, left: 20 };
+const margin = { top: 20, right: 20, bottom: 20, left: 200 };
 
 export const App = () => {
   const [data, setData] = useState(null);
@@ -41,6 +41,24 @@ export const App = () => {
   return (
     <svg width={width} height={height}>
       <g transform={`translate(${margin.left}, ${margin.top})`}>
+        {xScale.ticks().map((tickValue) => (
+          <g transform={`translate(${xScale(tickValue)}, ${0})`}>
+            <line 
+              y2={innerHeight}
+              stroke="black"
+            />
+            <text y={innerHeight + 3} dy='0.71em' style={{textAnchor: 'middle'}}>
+              {tickValue}
+            </text>
+          </g>
+        ))}
+        {yScale.domain().map((tickValue) => (
+          <g transform={`translate(${0}, ${yScale(tickValue) + yScale.bandwidth() / 2})`}>
+            <text  x={-10} dx='0.32em' style={{textAnchor: 'end'}}>
+              {tickValue}
+            </text>
+          </g>
+        ))}
         {data.map(d => <rect 
           key={d.Country} 
           y={yScale(d.Country)} 
